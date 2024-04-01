@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <script>
+    function add(){
+      var firstOp,secondOp,result;
+      firstOp = document.getElementById('first').value;
+      secondOp = document.getElementById('second').value;
+      result = Number(firstOp)+Number(secondOp);
+      alert("Addition of two numbers is:"+result);
+    }
+    function sub(){
+      var firstOp,secondOp,result;
+      firstOp = document.getElementById('first').value;
+      secondOp = document.getElementById('second').value;
+      result = Number(firstOp)-Number(secondOp);
+      alert("Subtraction of two numbers is:"+result);
+    }
+    function mul(){
+      var firstOp,secondOp,result;
+      firstOp = document.getElementById('first').value;
+      secondOp = document.getElementById('second').value;
+      result = Number(firstOp)*Number(secondOp);
+      alert("Multiplication of two numbers is:"+result);
+    }
+    function div(){
+      var firstOp,secondOp,result;
+      firstOp = document.getElementById('first').value;
+      secondOp = document.getElementById('second').value;
+      result = Number(firstOp)/Number(secondOp);
+      alert("Division of two numbers is:"+result);
+    }
+      </script>
+  </head>
+  <body>
+    <h1>SIMPLE CALCULATOR</h1>
+<label>Enter first Number</label>
+<input id="first" type="text" value=""><br/>
+<label>Enter first Number</label>
+<input id="second" type="text" value=""><br/>
+<button type="button" name="button" onclick="add()">ADD</button>
+<button type="button" name="button" onclick="sub()">sub</button>
+<button type="button" name="button" onclick="mul()">MUL</button>
+<button type="button" name="button" onclick="div()">DIV</button>
+  </body>
+</html>
